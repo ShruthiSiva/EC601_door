@@ -11,3 +11,5 @@ Dependencies
 Python 3.x/2.7
 uArm : https://github.com/uArm-Developer/pyuarm Install using 'pip install pyuarm'
 OpenCV : 2.4 or higher
+
+The folder "Bracket-3D-print" has the sketchup and .stl files for printing the camera bracket attached to the arm.
