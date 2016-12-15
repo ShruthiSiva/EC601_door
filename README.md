@@ -6,3 +6,8 @@ Open the application and click refresh. The list of all bluetooth devices will b
 Run the "hodor.py" python  file from another terminal on the Raspberry Pi using command, 
     python3 hodor.py
 In the application, hit the push button. The command window on pi will show message received and the program will work to open the door.
+
+Dependencies
+Python 3.x/2.7
+uArm : https://github.com/uArm-Developer/pyuarm Install using 'pip install pyuarm'
+OpenCV : 2.4 or higher
