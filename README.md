@@ -13,3 +13,20 @@ uArm : https://github.com/uArm-Developer/pyuarm Install using 'pip install pyuar
 OpenCV : 2.4 or higher
 
 The folder "Bracket-3D-print" has the sketchup and .stl files for printing the camera bracket attached to the arm.
+
+Image processing:
+
+a)Initialise the rpi camera module using the below
+
+camera = picamera.PiCamera()
+camera.resolution = (640,480)
+camera.framerate =32
+rawCapture = picamera.array.PiRGBArray(camera, size=(640,480))
+
+b) Perform a canny on each frame with these thresholds. This will detect the edges.
+100,200
+
+c) Blur the image applying the opencv blur function
+d) Feed the input to the cv2.HoughCircles to detect the circles in the image.
+e) For each hit find the coordinates and the count with regards to the min & max radius
+f) Draw a rounding circle against the Center of the coordinates.
